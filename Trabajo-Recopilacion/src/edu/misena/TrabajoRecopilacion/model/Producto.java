@@ -8,7 +8,7 @@ public class Producto {
     //Constructor
     private static int ultimoCodigo = 0;
 
-    public Producto(String nombre, double precio) {
+    public Producto() {
         this.codigo = "P" + (++ultimoCodigo);
         this.nombre = nombre;
         this.precio = precio;
@@ -31,14 +31,14 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public double getPrecio(double precio){
-        return precio;
+    public double getPrecio(){
+        return this.precio;
     }
 
     public void setPrecio(double precio){
         this.precio = precio;
     }
-    
+
     // metodo para mostrar informacion
     public String toString() {
         return codigo +
@@ -46,3 +46,4 @@ public class Producto {
                 "\t" + precio;
     }
 }
+

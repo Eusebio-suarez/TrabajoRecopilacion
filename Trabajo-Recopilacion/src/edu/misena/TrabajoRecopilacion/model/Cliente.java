@@ -5,7 +5,7 @@ public class Cliente {
     private String nif; // Número de Identificación Fiscal
 
     //Constructor
-    public Cliente (String nombre,String nif){
+    public Cliente (){
         this.nombre = nombre;
         this.nif = nif;
     }
@@ -27,5 +27,4 @@ public class Cliente {
         this.nif = nif;
     }
 }
-
 
